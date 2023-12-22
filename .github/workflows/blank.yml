@@ -25,7 +25,7 @@ jobs:
         with:
             create_credentials_file: 'true'
             workload_identity_provider: 'projects/353320674114/locations/global/workloadIdentityPools/github-actions-cloud-run/providers/github'
-            service_account: 'cloud-run-cicd'
+            service_account: 'cloud-run-cicd@stoked-forest-287205.iam.gserviceaccount.com'
       - id: 'gcloud'
         name: 'gcloud'
         run: |-
