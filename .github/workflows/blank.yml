@@ -31,5 +31,6 @@ jobs:
         run: |-
           cat ${{ steps.auth.outputs.credentials_file_path }}
           gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
-          # gcloud services list
+          gcloud config set project 353320674114
+          gcloud services list
 
